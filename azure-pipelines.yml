@@ -22,6 +22,6 @@ steps:
     resourceGroupName: 'test-rg'
     location: 'Australia East'
     templateLocation: 'URL of the file'
-    csmFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.json'
-    csmParametersFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.parameters.json'
+    csmFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json'
+    csmParametersFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
