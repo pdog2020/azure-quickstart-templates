@@ -25,4 +25,3 @@ steps:
     csmFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.json'
     csmParametersFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
-    deploymentName: 'deployment-test'
