@@ -1,0 +1,28 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Deploying template
+  displayName: 'Step: Deploy-Tempate'
+
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'VirtualizeThis(154645c4-8c4a-4f2d-b438-e676da39c362)'
+    subscriptionId: '154645c4-8c4a-4f2d-b438-e676da39c362'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'test-rg'
+    location: 'Australia East'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.json'
+    csmParametersFile: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-sshkey/azuredeploy.parameters.json'
+    deploymentMode: 'Incremental'
+    deploymentName: 'deployment-test'
