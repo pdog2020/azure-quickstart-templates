@@ -24,4 +24,4 @@ steps:
     templateLocation: 'URL of the file'
     csmFileLink: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json'
     csmParametersFileLink: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json'
-    deploymentMode: 'Incremental''- task: AzureResourceManagerTemplateDeployment@3
+    deploymentMode: 'Incremental'
