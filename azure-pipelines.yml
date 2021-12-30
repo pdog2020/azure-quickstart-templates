@@ -13,7 +13,7 @@ steps:
 - script: echo Deploying template
   displayName: 'Step: Deploy-Tempate'
 
-task: AzureResourceManagerTemplateDeployment@3
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'VirtualizeThis(154645c4-8c4a-4f2d-b438-e676da39c362)'
@@ -22,6 +22,6 @@ task: AzureResourceManagerTemplateDeployment@3
     resourceGroupName: 'test-rg'
     location: 'Australia East'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json'
-    csmParametersFileLink: 'https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json'
+    csmFileLink: https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json
+    csmParametersFileLink: https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json
     deploymentMode: 'Incremental'
