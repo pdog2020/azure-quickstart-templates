@@ -13,7 +13,7 @@ steps:
 - script: echo Deploying template
   displayName: 'Step: Deploy-Tempate'
 
-- task: AzureResourceManagerTemplateDeployment@3
+task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'VirtualizeThis(154645c4-8c4a-4f2d-b438-e676da39c362)'
