@@ -22,6 +22,6 @@ steps:
     resourceGroupName: 'test-rg'
     location: 'Australia East'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json'
-    csmParametersFileLink: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json'
+    csmFileLink: 'https://raw.githubusercontent.com/pdog2020/azure-quickstart-templates/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.json'
+    csmParametersFileLink: 'https://raw.githubusercontent.com/pdog2020/azure-quickstart-templates/master/quickstarts/microsoft.compute/1-vm-loadbalancer-2-nics/azuredeploy.parameters.json'
     deploymentMode: 'Incremental'
